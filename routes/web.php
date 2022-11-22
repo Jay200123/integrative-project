@@ -34,6 +34,11 @@ Route::group(['prefix' => 'user'], function(){
         //POST Request for customer
         Route::post('/signup', [UserController::class, 'postSignup'])->name('user.signups');
 
+        //GET Request for Employee Sign up Views
+        Route::get('/employee-signup', [UserController::class, 'getEmployee'])->name('user.esignup');
+        //POST Request for Employee Sign up
+        Route::post('/employee-signup', [UserController::class, 'postEmployee'])->name('user.esignups');
+
         //GET Request for Sign in Views
         Route::get('/signin', [UserController::class, 'getSignin'])->name('user.signin');
         //POST REQUEST for user sign in
@@ -41,7 +46,19 @@ Route::group(['prefix' => 'user'], function(){
     });
  
     //Route Group for User Customer
-    Route::get('/profile', [UserController::class, 'getProfile'])->name('user.profile');
+    Route::group(['middleware' => 'role:customer'], function(){
+
+        //routes for customer profile
+        Route::get('/profile', [UserController::class, 'getProfile'])->name('user.profile');
+    });
+
+    //Route Group for Employee
+    Route::group(['middleware' => 'role:employee'], function(){
+
+        // GET REQUEST FOR user employee profile
+        Route::get('/employee-profile', [UserController::class, 'getEmployeeProfile'])->name('employee.profile');
+
+    });
 
 });
 
