@@ -20,7 +20,7 @@
 <h3><strong>Welcome to FootWear PH Web Application</strong></h3>
 <div class="containers">
         <div class="col-md-8 col-md-offset-2">
-        <h1><i class="fa fa-address-card" aria-hidden="true"></i>User Profile: {{Auth::user()->name}}</h1>
+        <h1><i class="fa fa-address-card" aria-hidden="true"></i>Customer Profile: {{Auth::user()->name}}</h1>
       @foreach($customers as $customer)
       <div class="avatar">
           <img src="{{ asset($customer->customer_image) }}" height=240px width=240px>

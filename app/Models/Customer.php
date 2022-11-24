@@ -18,4 +18,8 @@ class Customer extends Model
     public function user(){
         return $this->belongsTo('App\Models\User');
     }
+
+    public function products(){
+        return $this->hasMany('App/Models/Product');
+    }
 }

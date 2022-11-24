@@ -5,6 +5,7 @@ use App\Models\User;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -57,6 +58,8 @@ Route::group(['prefix' => 'user'], function(){
 
         // GET REQUEST FOR user employee profile
         Route::get('/employee-profile', [UserController::class, 'getEmployeeProfile'])->name('employee.profile');
+
+        Route::get('product', [ProductController::class, 'index'])->name('product.index');
 
     });
 

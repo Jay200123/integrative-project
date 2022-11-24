@@ -17,6 +17,7 @@
         @yield('styles')
     </head>
     <body>
+        <!-- customer master blade -->
 @include('partials.header')
     <div class="container">
         @yield('content')
