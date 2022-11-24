@@ -1,0 +1,1 @@
+console.log('tang ina mo morgs ang payat mo')
