@@ -15,7 +15,7 @@
 
     <li>
     <a href="{{route('product.index')}}">
-    <i class="fa fa-users" aria-hidden="true"></i>Employee
+    <i class="fa fa-archive"  aria-hidden="true"></i>Products
     </a>
     </li>
 
