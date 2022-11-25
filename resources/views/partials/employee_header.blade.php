@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" > -->
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -14,23 +15,23 @@
     <ul class="nav navbar-nav navbar-right">
 
     <li>
-    <a href="{{route('product.index')}}">
-    <i class="fa fa-archive"  aria-hidden="true"></i>Products
-    </a>
-    </li>
+            <a href="{{route('product.index')}}">
+            <i class="fa fa-user" aria-hidden="true"></i>Customer
+            </a>
+            </li>
 
           <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
           aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> User Management <span class="caret"></span></a>
           <ul class="dropdown-menu">
             @if (Auth::check())
-              <li><i class="fa fa-user" aria-hidden="true"><a href="{{ route('employee.profile') }}"></i>Employee Profile</a></li>
+              <li><i class="fa fa-user" aria-hidden="true"><a href="{{ route('employee.profile') }}">User Profile</a></i></li>
               <li role="separator" class="divider"></li>
-              <li><i class="fa fa-sign-out" aria-hidden="true"><a href="{{ route('user.logout') }}"></i>Logout</a></li>
+              <li><i class="fa fa-sign-out" aria-hidden="true"><a href="{{ route('user.logout') }}">Logout</a></i></li>
               @else
               <li><i class="fa fa-user-plus" aria-hidden="true"><a href="{{ route('user.signup') }}"></i>Customer Signup</a></li>
-              <li><i class="fa fa-user-plus" aria-hidden="true"><a href="{{ route('user.employee') }}"></i>Employee Signup</a></li>
-              <li><i class="fa fa-sign-in" aria-hidden="true"><a href="{{ route('user.signin') }}"></i>Signin</a></li>
+              <li><i class="fa fa-user-plus" aria-hidden="true"><a href="{{ route('user.esignup') }}"></i>Employee Signup</a></li>
+              <li><i class="fa fa-sign-in" aria-hidden="true"><a href="{{ route('user.signins') }}"></i>Signin</a></li>
             @endif
           </ul>
         </li>
@@ -38,5 +39,3 @@
 </div>
 </div> 
 </nav>      
-
-

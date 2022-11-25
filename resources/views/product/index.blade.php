@@ -1,16 +1,16 @@
-@include('layouts.employee_master')
-<div id="products" class="container">
+@include('partials.test_header')
+<div id="items" class="container">
      <button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#itemModal"  >add<span  class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
   <div  class="table-responsive">
     <table id="itable" class="table table-striped table-hover">
       <thead>
         <tr>
           <th>item ID</th>
-          <th>Title</th>
+          <th>Brand</th>
           <th>Image</th>
-          <th>description</th>
-          <th>sell price</th>
-          <th>cost price</th>
+          <th>Description</th>
+          <th>Sell price</th>
+          <th>Cost price</th>
           <th>Action</th>
           </tr>
       </thead>
@@ -61,3 +61,4 @@
       </div>
   </div>
 </div>
+

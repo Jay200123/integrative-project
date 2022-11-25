@@ -1,6 +1,7 @@
-@extends('layouts.employee_master')
-@section('content')
+@include('partials.test_header')  
+
 <body class="background">
+  <div class="container">
 <div class="card-body">
     @if ($errors->any())
       <div class="alert alert-danger">
@@ -26,5 +27,5 @@
         @endforeach
 </div>
 </div>
+</div>
 </body>
-@endsection

@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-    <a class="navbar-brand" href="#"><i class="fa fa-mobile" aria-hidden="true"></i>Products</a>
+    <a class="navbar-brand" href="#"><i class="fa fa-product-hunt" aria-hidden="true"></i>Products</a>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
