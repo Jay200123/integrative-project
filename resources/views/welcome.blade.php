@@ -22,22 +22,24 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="images/court1.jpg" alt="Xia dynasty" height="304" width="236" class="img-fluid">
+      <img src="images/BG4.jpg" alt="Xia dynasty" height="500px" width="236" class="img-fluid">
 
       <div class="carousel-caption">
-        <h3 style="color:black">Nike Boy's Court for Men </h3>
+        <h3 style="color:black">ACTIVE LIFESTYLE </h3>
       </div>
     </div>
     <div class="item">
-      <img src="images/puma4.jpg" alt="Yang dynasty" height="308" width="236" class="img-fluid">
+      <img src="images/logo4.jpg" alt="Yang dynasty" height="600px" width="236" class="img-fluid">
       <div class="carousel-caption">
-        <h3 style="color:black">Puma Unisex R78 Runner Shoes</h3>
+        <h3 style="color:black">I MADE ME DO IT</h3>
       </div>
     </div>
     <div class="item">
-      <img src="images/onetwo.jpg" alt="MING Dynasty" height="304" width="236" class="img-fluid">
+      <img src="images/icon3.jpg" alt="MING Dynasty" height="600px" width="236" class="img-fluid">
       <div class="carousel-caption">
-        <h3 style="color:black">World Balance Elevation Men's Shoes</h3>
+        <h3 style="color:black"> The one thing you have to do if you write a book is put yourself in someone else's shoes. The reader's shoes. You've got to entertain them. 
+        <br>
+        --Mark Haddon</h3>
       </div>
     </div>
   </div>

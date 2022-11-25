@@ -1,5 +1,10 @@
-@include('partials.test_header')  
-
+@include('partials.test_header')
+<style>
+  img{
+    border:solid;
+  }
+</style>  
+<br>
 <body class="background">
   <div class="container">
 <div class="card-body">
@@ -14,6 +19,7 @@
   </div>     
 @endif
 <h3><strong>Welcome to FootWear PH Web Application</strong></h3>
+<br>
 <div class="containers">
         <div class="col-md-8 col-md-offset-2">
         <h1><i class="fa fa-address-card" aria-hidden="true"></i>Employee Profile: {{Auth::user()->name}}</h1>

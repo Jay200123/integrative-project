@@ -1,4 +1,5 @@
 @include('partials.test_header')
+<br>
 <div id="items" class="container">
      <button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#itemModal"  >add<span  class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
   <div  class="table-responsive">
@@ -9,8 +10,8 @@
           <th>Brand</th>
           <th>Image</th>
           <th>Description</th>
-          <th>Sell price</th>
-          <th>Cost price</th>
+          <th>Sell Price</th>
+          <th>Cost Price</th>
           <th>Action</th>
           </tr>
       </thead>
