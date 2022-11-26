@@ -41,3 +41,40 @@ $(document).ready(function () {
     })
 
 });
+
+
+// form submit
+$("#productSubmit").on("click", function (e) {
+    e.preventDefault();
+    var data = $("#pform")[0];
+    console.log(data);
+
+    let formData = new FormData(data);
+
+    console.log(formData);
+    for (var pair of formData.entries()){
+        console.log(pair[0] + ',' + pair[1]);
+    }
+
+    $.ajax({
+        type: "POST",
+        url: "/api/products/store",
+        data:formData,
+        contentType: false,
+        processData: false,
+        headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') },
+        dataType:"json", 
+
+        success:function(data){
+               console.log(data);
+               $("#productModal").modal("hide");
+
+               var $ptable = $('#ptable').DataTable();
+               $ptable.row.add(data.product).draw(false); 
+        },
+
+        error:function (error){
+            console.log(error);
+        }
+    })
+});

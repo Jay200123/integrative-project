@@ -42,7 +42,20 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $product = new Product();
+
+        $product->brand = $request->brand;
+        $product->description = $request->description;
+        $product->cost_price = $request->cost_price;
+        $product->sell_price = $request->sell_price;
+
+        $files = $request->file('uploads');
+
+        $product->product_image = 'images/'.$files->getClientOriginalName();
+        $product->save();
+
+        Storage::put('public/images/'.$files->getClientOriginalName(), file_get_contents($files));
+        return response()->json(["success" => "product created successfully.", "product" => $product, "status" => 200]);
     }
 
     /**

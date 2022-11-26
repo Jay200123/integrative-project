@@ -1,4 +1,4 @@
-@include('partials.test_header')
+@include('layouts.base')
 <style>
   img{
     border:solid;
@@ -35,3 +35,4 @@
 </div>
 </div>
 </body>
+
